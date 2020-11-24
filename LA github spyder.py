@@ -26,4 +26,5 @@ df["day"] = df.date.apply(lambda x : x.split("/")[0])
 
 df.drop("date", axis = 1, inplace = True)
 df.head()
+df.city = df.city.apply(lambda y: 'Culver City' if y== 'culver city' else y)
 print('Cambio de alex')
