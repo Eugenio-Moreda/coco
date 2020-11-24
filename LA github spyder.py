@@ -26,3 +26,4 @@ df["day"] = df.date.apply(lambda x : x.split("/")[0])
 
 df.drop("date", axis = 1, inplace = True)
 df.head()
+print('Cambio de alex')
